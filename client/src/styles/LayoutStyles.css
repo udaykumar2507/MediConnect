@@ -1,0 +1,117 @@
+/* Layout Styles */
+
+:root {
+  --sidebar-bg: #343a40;
+  --sidebar-active-bg: #007bff;
+  --sidebar-text-color: #ffffff;
+  --header-bg: #212529;
+  --content-bg: #f8f9fa;
+  --text-color: #212529;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--content-bg);
+}
+
+.app-sidebar {
+  width: 250px;
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text-color);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.sidebar-logo {
+  text-align: center;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--sidebar-text-color);
+}
+
+.sidebar-menu {
+  margin-top: 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-item i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.menu-item a {
+  color: var(--sidebar-text-color);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background-color: var(--sidebar-active-bg);
+  color: var(--sidebar-text-color);
+}
+
+.logout-item {
+  cursor: pointer;
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--content-bg);
+}
+
+.app-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: var(--header-bg);
+  color: var(--sidebar-text-color);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.notification-badge i {
+  font-size: 20px;
+  color: var(--sidebar-text-color);
+}
+
+.profile-link {
+  color: var(--sidebar-text-color);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.app-body {
+  flex-grow: 1;
+  padding: 25px;
+  overflow-y: auto;
+}

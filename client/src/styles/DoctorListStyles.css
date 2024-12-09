@@ -1,0 +1,80 @@
+/* Doctor Card Styles */
+.doctor-card {
+    width: 100%;
+    max-width: 250px;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  }
+  
+  .doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Card Header (Doctor Icon) */
+  .doctor-card-header {
+    width: 100%;
+    height: 150px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .doctor-icon {
+    font-size: 60px;
+    color: #007bff;
+  }
+  
+  /* Card Body */
+  .doctor-card-body {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .doctor-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 8px;
+  }
+  
+  .doctor-specialization {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6c757d;
+    margin-bottom: 12px;
+  }
+  
+  .doctor-timings,
+  .doctor-fee {
+    font-size: 0.9rem;
+    color: #495057;
+    margin-bottom: 8px;
+  }
+  
+  /* Button Style */
+  .doctor-appointment-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .doctor-appointment-button:hover {
+    background-color: #0056b3;
+  }
+  

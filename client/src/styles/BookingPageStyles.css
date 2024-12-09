@@ -1,0 +1,114 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f6f9;
+}
+
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full screen height */
+  padding: 20px;
+  background-color: #f4f6f9;
+}
+
+/* Booking Card */
+.booking-card {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  text-align: center;
+}
+
+/* Title Styling */
+.booking-card h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d3436;
+  margin-bottom: 15px;
+}
+
+/* Doctor Details */
+.doctor-info {
+  background: #f8f9fa;
+  color: #212529;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow:0 2px 5px rgba(0,0,0,0,.1);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.doctor-info h4 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  font-weight: 600;
+  margin-bottom: 10px;;
+}
+
+.doctor-info span {
+  font-weight: bold;
+  color:#495057
+}
+
+/* Input Fields */
+.ant-picker {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.ant-picker:hover,
+.ant-picker-focused {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+/* Buttons */
+.booking-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.booking-button-primary {
+  background: #007bff;
+  color: #fff;
+}
+
+.booking-button-primary:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.booking-button-secondary {
+  background: #2d3436;
+  color: #fff;
+}
+
+.booking-button-secondary:hover {
+  background: #1c1e21;
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .booking-card {
+    padding: 20px;
+  }
+}
